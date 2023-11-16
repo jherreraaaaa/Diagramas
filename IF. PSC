@@ -1,0 +1,34 @@
+Algoritmo INDICE_DE_MASA_CORPORAL
+	Definir masa, talla, imc, tallatotal Como Real
+	Escribir 'ingresar valor de masa'
+	Leer masa
+	Escribir 'ingresar valor de talla'
+	Leer talla
+	tallatotal <- talla*talla
+	imc <- masa/tallatotal
+	Escribir 'imc=', imc
+	Si imc<18.5 Entonces
+		Escribir 'insuficiencia_ponderal'
+	SiNo
+		Si imc>18.5 Y imc<24.9 Entonces
+			Escribir 'intervalo_normal'
+		SiNo
+			Si imc>25.0 Y imc<29.9 Entonces
+				Escribir 'preobesidad'
+			SiNo
+				Si imc>30.0 Y imc<34.4 Entonces
+					Escribir 'obesidad_clase_I'
+				SiNo
+					Si imc>35.0 Y imc<39.9 Entonces
+						Escribir 'obesidad_clase_II'
+					SiNo
+						Si imc>40.0 Entonces
+							Escribir 'obesidad_clase_III'
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	
+FinAlgoritmo

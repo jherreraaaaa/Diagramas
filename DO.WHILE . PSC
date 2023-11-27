@@ -1,0 +1,23 @@
+Algoritmo SumaNumerosDoWhile
+    Definir numero, suma Como Entero
+
+    // Inicializar la suma
+    suma <- 0
+
+    // Bucle do-while que se ejecuta al menos una vez
+    Repetir
+        // Solicitar al usuario que ingrese un número
+        Escribir("Ingrese un número (ingrese un número negativo para salir): ")
+        Leer(numero)
+
+        // Sumar el número al total
+        Si numero >= 0 Entonces
+            suma <- suma + numero
+        FinSi
+
+    // Continuar el bucle mientras el número ingresado no sea negativo
+    Hasta Que numero < 0
+
+    // Mostrar la suma final
+    Escribir("La suma de los números ingresados es: ", suma)
+FinAlgoritmo
